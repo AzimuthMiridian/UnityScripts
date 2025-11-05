@@ -230,7 +230,14 @@ public class AMBuildVRMBlendShapeClips : EditorWindow
     void OnGUI()
     {
         GUIStyle labelStyle = GUI.skin.label;
-        labelStyle.wordWrap = true;
+
+        labelStyle.fontStyle = FontStyle.Bold;
+
+        GUILayout.Label("NOTE: BACK UP YOUR PROJECT!! I make no promises about this functioning properly or as expected, so ALWAYS back up your project first! I am not responsible for your project blowing up, even if this script/tool is used exactly as directed/expected. The steps below may also not be 100% complete. If there are issues I will try updating them over time, but no promises.", labelStyle);
+        
+        GUILayout.Space(10);
+
+        labelStyle.fontStyle = FontStyle.Normal;
 
         GUILayout.Label("The process for this is as follows:");
         GUILayout.Label("    1. Use VRCFury to build a test copy of your avatar and rename it in the scene (you'll need this later).");
@@ -246,6 +253,8 @@ public class AMBuildVRMBlendShapeClips : EditorWindow
         GUILayout.Label("   11. Configure all the checkboxes below.");
         GUILayout.Label("   12. Click 'Apply'.");
 
+        GUILayout.Space(10);
+        
         EditorGUILayout.LabelField("", GUI.skin.horizontalSlider);
 
         if (GUILayout.Button("Zero Blendshapes of Selected Object"))
