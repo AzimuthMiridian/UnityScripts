@@ -240,18 +240,19 @@ public class AMBuildVRMBlendShapeClips : EditorWindow
         labelStyle.fontStyle = FontStyle.Normal;
 
         GUILayout.Label("The process for this is as follows:");
-        GUILayout.Label("    1. Use VRCFury to build a test copy of your avatar and rename it in the scene (you'll need this later).");
-        GUILayout.Label("    2. Duplicate the test copy in the scene, and add a 'Z' to the end of the name.");
-        GUILayout.Label("    3. Select the 'Z' test copy in the scene, and click the 'Zero Blendshapes' button below.");
-        GUILayout.Label("    4. Create a new empty folder named '_VRMExport' in your Unity project.");
-        GUILayout.Label("    5. Export the 'Z' test copy as a VRM, giving it a unique name and saving it to the '_VRMExport' folder you created.");
-        GUILayout.Label("    6. Drag the exported VRM in the '_VRMExport' folder back into the scene.");
-        GUILayout.Label("    7. Select your blendshape preset below.");
-        GUILayout.Label("    8. Drag your original VRCFury test copy into the 'Source VRC Avatar' slot below.");
-        GUILayout.Label("    9. Drag the exported VRM you added to the scene into the 'Source VRM Avatar' slot below.");
-        GUILayout.Label("   10. Navigate to '_VRMExport\\<name>.BlendShapes' folder and drag the 'BlendShape' file into the 'Blend Shape Avatar' slot below.");
-        GUILayout.Label("   11. Configure all the checkboxes below.");
-        GUILayout.Label("   12. Click 'Apply'.");
+        GUILayout.Label("    1. If your VRChat avatar includes a VRCFury Blendshape Optimizer component, remove it (you can re-add it to your avatar for VRC after this process is complete).");
+        GUILayout.Label("    2. Use VRCFury to build a test copy of your avatar and rename it in the scene (you'll need this later).");
+        GUILayout.Label("    3. Duplicate the test copy in the scene, and add a 'Z' to the end of the name.");
+        GUILayout.Label("    4. Select the 'Z' test copy in the scene, and click the 'Zero Blendshapes' button below.");
+        GUILayout.Label("    5. Create a new empty folder named '_VRMExport' in your Unity project.");
+        GUILayout.Label("    6. Export the 'Z' test copy as a VRM, giving it a unique name and saving it to the '_VRMExport' folder you created.");
+        GUILayout.Label("    7. Drag the exported VRM in the '_VRMExport' folder back into the scene.");
+        GUILayout.Label("    8. Select your blendshape preset below.");
+        GUILayout.Label("    9. Drag your original VRCFury test copy into the 'Source VRC Avatar' slot below.");
+        GUILayout.Label("   10. Drag the exported VRM you added to the scene into the 'Source VRM Avatar' slot below.");
+        GUILayout.Label("   11. Navigate to '_VRMExport\\<name>.BlendShapes' folder and drag the 'BlendShape' file into the 'Blend Shape Avatar' slot below.");
+        GUILayout.Label("   12. Configure all the checkboxes below.");
+        GUILayout.Label("   13. Click 'Apply'.");
 
         GUILayout.Space(10);
         
@@ -650,3 +651,4 @@ public class AMBuildVRMBlendShapeClips : EditorWindow
     }
 }
 #endif
+
