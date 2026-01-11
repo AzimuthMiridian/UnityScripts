@@ -194,6 +194,80 @@ public class AMBuildVRMBlendShapeClips : EditorWindow
                     { "tongueOut", new List<VTuberBlendShapeMapValue> { new ("tongueOut", 100.0f) } }
                 }
             }
+        },
+        new VTuberBlendShapePreset()
+        {
+            Name = "Canis Revamp",
+            Map = new VTuberBlendShapeMap
+            {
+                Visemes = new()
+                {
+                    { BlendShapePreset.Neutral, null },
+                    { BlendShapePreset.A, new List<VTuberBlendShapeMapValue> { new ("Viseme_AH", 100.0f) } },
+                    { BlendShapePreset.I, new List<VTuberBlendShapeMapValue> { new ("Viseme_IH", 100.0f) } },
+                    { BlendShapePreset.U, new List<VTuberBlendShapeMapValue> { new ("Viseme_OU", 100.0f) } },
+                    { BlendShapePreset.E, new List<VTuberBlendShapeMapValue> { new ("Viseme_EE", 100.0f) } },
+                    { BlendShapePreset.O, new List<VTuberBlendShapeMapValue> { new ("Viseme_OH", 100.0f) } },
+                    { BlendShapePreset.Blink, new List<VTuberBlendShapeMapValue> { new ("Eyes_Blink", 100.0f) } },
+                    { BlendShapePreset.Blink_L, new List<VTuberBlendShapeMapValue> { new ("Eyes_Blink_L", 100.0f) } },
+                    { BlendShapePreset.Blink_R, new List<VTuberBlendShapeMapValue> { new ("Eyes_Blink_R", 100.0f) } },
+                    // { BlendShapePreset.LookUp, new List<VTuberBlendShapeMapValue> { new ("EyesUp", 100.0f) } }, // Canis Revamp does not seem to have these basic eye blendshapes
+                    // { BlendShapePreset.LookDown, new List<VTuberBlendShapeMapValue> { new ("EyesDown", 100.0f) } },
+                    // { BlendShapePreset.LookLeft, new List<VTuberBlendShapeMapValue> { new ("EyesLeft", 100.0f) } },
+                    // { BlendShapePreset.LookRight, new List<VTuberBlendShapeMapValue> { new ("EyesRight", 100.0f) } }
+                },
+                ARKit = new()
+                {
+                    { "browDownLeft", new List<VTuberBlendShapeMapValue> { new ("BrowDownLeft", 100.0f) } },
+                    { "browDownRight", new List<VTuberBlendShapeMapValue> { new ("BrowDownRight", 100.0f) } },
+                    { "browInnerUp", new List<VTuberBlendShapeMapValue> { new ("BrowInnerUp", 100.0f) } },
+                    { "browOuterUpLeft", new List<VTuberBlendShapeMapValue> { new ("BrowOuterUpLeft", 100.0f) } },
+                    { "browOuterUpRight", new List<VTuberBlendShapeMapValue> { new ("BrowOuterUpRight", 100.0f) } },
+                    { "cheekPuff", new List<VTuberBlendShapeMapValue> { new ("CheekPuff", 100.0f) } },
+                    { "cheekSquintLeft", new List<VTuberBlendShapeMapValue> { new ("CheekSquint", 100.0f) } },
+                    { "cheekSquintRight", new List<VTuberBlendShapeMapValue> { new ("CheekSquint", 100.0f) } },
+                    { "eyeBlinkLeft", new List<VTuberBlendShapeMapValue> { new ("EyeClosedLeft", 100.0f) } },
+                    { "eyeBlinkRight", new List<VTuberBlendShapeMapValue> { new ("EyeClosedRight", 100.0f) } },
+                    { "eyeLookDownLeft", new List<VTuberBlendShapeMapValue> { new ("EyeLookDownLeft", 100.0f), new ("EyeBall_LookDown_L", 100.0f) } },
+                    { "eyeLookDownRight", new List<VTuberBlendShapeMapValue> { new ("EyeLookDownRight", 100.0f), new ("EyeBall_LookDown_R", 100.0f) } },
+                    { "eyeLookInLeft", new List<VTuberBlendShapeMapValue> { new ("EyeLookInLeft", 100.0f), new ("EyeBall_LookRight_L", 100.0f) } },
+                    { "eyeLookInRight", new List<VTuberBlendShapeMapValue> { new ("EyeLookInRight", 100.0f), new ("EyeBall_LookLeft_R", 100.0f) } },
+                    { "eyeLookOutLeft", new List<VTuberBlendShapeMapValue> { new ("EyeLookOutLeft", 100.0f), new ("EyeBall_LookLeft_L", 100.0f) } },
+                    { "eyeLookOutRight", new List<VTuberBlendShapeMapValue> { new ("EyeLookOutRight", 100.0f), new ("EyeBall_LookRight_R", 100.0f) } },
+                    { "eyeLookUpLeft", new List<VTuberBlendShapeMapValue> { new ("EyeLookUpLeft", 100.0f), new ("EyeBall_LookUp_L", 100.0f) } },
+                    { "eyeLookUpRight", new List<VTuberBlendShapeMapValue> { new ("EyeLookUpRight", 100.0f), new ("EyeBall_LookUp_R", 100.0f) } },
+                    { "eyeSquintLeft", new List<VTuberBlendShapeMapValue> { new ("EyeSquintLeft", 100.0f),  } },
+                    { "eyeSquintRight", new List<VTuberBlendShapeMapValue> { new ("EyeSquintRight", 100.0f) } },
+                    { "eyeWideLeft", new List<VTuberBlendShapeMapValue> { new ("EyeWideLeft", 100.0f) } },
+                    { "eyeWideRight", new List<VTuberBlendShapeMapValue> { new ("EyeWideRight", 100.0f) } },
+                    { "jawForward", new List<VTuberBlendShapeMapValue> { new ("JawForward", 100.0f) } },
+                    { "jawLeft", new List<VTuberBlendShapeMapValue> { new ("JawLeft", 100.0f) } },
+                    { "jawOpen", new List<VTuberBlendShapeMapValue> { new ("JawOpen", 100.0f) } },
+                    { "jawRight", new List<VTuberBlendShapeMapValue> { new ("JawRight", 100.0f) } },
+                    { "mouthClose", new List<VTuberBlendShapeMapValue> { new ("MouthClose", 100.0f) } },
+                    { "mouthFrownLeft", new List<VTuberBlendShapeMapValue> { new ("MouthFrownLeft", 100.0f) } },
+                    { "mouthFrownRight", new List<VTuberBlendShapeMapValue> { new ("MouthFrownRight", 100.0f) } },
+                    { "mouthFunnel", new List<VTuberBlendShapeMapValue> { new ("LipFunnel", 100.0f) } },
+                    { "mouthLeft", new List<VTuberBlendShapeMapValue> { new ("MouthLeft", 100.0f) } },
+                    { "mouthLowerDownLeft", new List<VTuberBlendShapeMapValue> { new ("MouthLowerDownLeft", 100.0f) } },
+                    { "mouthLowerDownRight", new List<VTuberBlendShapeMapValue> { new ("MouthLowerDownRight", 100.0f) } },
+                    { "mouthPressLeft", new List<VTuberBlendShapeMapValue> { new ("MouthPressLeft", 100.0f) } },
+                    { "mouthPressRight", new List<VTuberBlendShapeMapValue> { new ("MouthPressRight", 100.0f) } },
+                    { "mouthPucker", new List<VTuberBlendShapeMapValue> { new ("LipPucker", 100.0f) } },
+                    { "mouthRight", new List<VTuberBlendShapeMapValue> { new ("MouthRight", 100.0f) } },
+                    { "mouthRollLower", new List<VTuberBlendShapeMapValue> { new ("LipSuckLower", 100.0f) } },
+                    { "mouthRollUpper", new List<VTuberBlendShapeMapValue> { new ("LipSuckUpper", 100.0f) } },
+                    { "mouthShrugLower", new List<VTuberBlendShapeMapValue> { new ("LipFunnelLower", 100.0f) } },
+                    { "mouthShrugUpper", new List<VTuberBlendShapeMapValue> { new ("LipFunnelUpper", 100.0f) } },
+                    { "mouthSmileLeft", new List<VTuberBlendShapeMapValue> { new ("MouthSmileLeft", 100.0f) } },
+                    { "mouthSmileRight", new List<VTuberBlendShapeMapValue> { new ("MouthSmileRight", 100.0f) } },
+                    { "mouthUpperUpLeft", new List<VTuberBlendShapeMapValue> { new ("MouthUpperLeft", 100.0f) } },
+                    { "mouthUpperUpRight", new List<VTuberBlendShapeMapValue> { new ("MouthUpperRight", 100.0f) } },
+                    { "noseSneerLeft", new List<VTuberBlendShapeMapValue> { new ("NoseSneerLeft", 100.0f) } },
+                    { "noseSneerRight", new List<VTuberBlendShapeMapValue> { new ("NoseSneerRight", 100.0f) } },
+                    { "tongueOut", new List<VTuberBlendShapeMapValue> { new ("TongueOut", 100.0f) } }
+                }
+            }
         }
     };
 
@@ -651,4 +725,5 @@ public class AMBuildVRMBlendShapeClips : EditorWindow
     }
 }
 #endif
+
 
